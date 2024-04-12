@@ -42,6 +42,10 @@ elif [ "$opt" == "tracet" ]; then
     GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" gst-launch-1.0 aravissrc ! video/x-bayer,width=1920,height=1200,framerate=999/1,format=rggb ! tcamconvert ! videoconvert ! autovideosink > traces.log 2>&1
 elif [ "$opt" == "tracec" ]; then
     GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" gst-launch-1.0 pylonsrc capture-error=keep stream::MaxNumBuffer=1 ! "video/x-raw,width=1920,height=1200,framerate=60/1,format=YUY2" ! videoconvert ! autovideosink sync=false > traces.log 2>&1
+elif [ "$opt" == "rtsp-server" ]; then
+    GST_DEBUG=$dbg gst-launch-1.0 aravissrc ! video/x-bayer,width=1920,height=1200,framerate=60/1,format=rggb ! tcamconvert ! nvvideoconvert ! 'video/x-nv-yuv, format=(string)NV12' ! nvh264enc ! rtph264pay config-interval=1 pt=96 ! udpsink host=127.0.0.1 port=5000
+elif [ "$opt" == "rtsp-client" ]; then
+    GST_DEBUG=$dbg gst-launch-1.0 udpsrc port=5000 ! application/x-rtp, encoding-name=H264,payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
 else
     echo "Unknown option: $opt"
 fi

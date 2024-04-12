@@ -44,10 +44,10 @@ sudo make install
 
 # Install tcamdutils
 echo "Installing tcamdutils"
-cd ..
+cd ../..
 
 mkdir tcamdutils
 cd tcamdutils
 
-wget https://s1-dl.theimagingsource.com/api/2.5/packages/software/gstreamer/tiscameradutilsamd64/b0132f21-4cff-525a-87ef-89df286de160/tcamdutils_1.0.0.560_amd64.deb
-sudo apt install -y ./tcamdutils*.deb
+wget https://s1-dl.theimagingsource.com/api/2.5/packages/software/gstreamer/tiscameradutilsamd64/f286591a-43c8-52ae-a41a-9b8b6e928c52/tiscamera-dutils_1.0.0_amd64.deb
+sudo apt install -y ./tiscamera-dutils*.deb

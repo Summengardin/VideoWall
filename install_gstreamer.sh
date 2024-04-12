@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install -y \
+sudo apt install --reinstall -y \
     libgstreamer1.0-dev \
     libgstreamer-plugins-base1.0-dev \
     libgstreamer-plugins-good1.0-dev \
@@ -20,5 +20,3 @@ sudo apt install -y \
     gstreamer1.0-pulseaudio \
     ffmpeg
     
-
-
