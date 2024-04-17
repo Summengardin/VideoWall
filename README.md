@@ -1,7 +1,9 @@
-# Intallation Instructions x86
+**[ Work in progress ]**
+# Installation Instructions for pylon
 
 1. Install pylon
 
 2. Install gstreamer
 
-3. Install pylon gstreamer plugin
+3. Install pylon gst
+
