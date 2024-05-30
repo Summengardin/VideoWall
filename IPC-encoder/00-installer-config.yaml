@@ -1,0 +1,10 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: true
+    eno2:
+      dhcp4: no
+      dhcp6: no
+      addresses: [169.254.1.72/16,]
+  version: 2
