@@ -1,0 +1,14 @@
+
+batch-size=1
+#Required by the app for OSD, not a plugin property
+bbox-border-color0=1;0;0;1
+bbox-border-color1=0;1;1;1
+bbox-border-color2=0;0;1;1
+bbox-border-color3=0;1;0;1
+interval=0
+#Required by the app for SGIE, when used along with config-file property
+gie-unique-id=1
+config-file=config_infer_primary.txt
+
+[tests]
+file-loop=0

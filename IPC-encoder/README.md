@@ -27,3 +27,18 @@ Then, run the followin BEFORE rebooting
 ```
 sudo netplan apply
 ``` 
+# Troubleshooting
+## tiscamera
+Installing the `tiscamera`-library required several unmentioned libraries. tiscamera/scripts/dependency-manager needed sudo to run for example.  
+From **apt-get**:
+- sudo
+- libzip-dev  
+
+From **pip**:
+- sphinx
+
+tiscamera is built without tools. These are all CMakeOptions differing from the default:  
+    -DTCAM_BUILD_ARAVIS=OFF \
+    -DTCAM_BUILD_TOOLS=OFF \
+    -DTCAM_BUILD_LIBUSB=OFF \
+    -DTCAM_BUILD_V4L2=OFF 
