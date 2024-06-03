@@ -49,7 +49,7 @@ with open(log_file_path, 'r') as file:
 
 
 # Assuming elements are reported in a synchronized fashion, aligning times
-elements_sorted = sorted(element_times.keys())
+elements_sorted = element_times.keys()
 rows = zip(*[element_times[element] for element in elements_sorted])
 
 

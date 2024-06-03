@@ -1,0 +1,59 @@
+Pipeline:
+
+
+FPS:
+Average Frame Time: 0.005556 seconds
+Estimated FPS: 179.98
+
+
+Timing:
+
+Element: capsfilter0
+  Count: 891
+  Min: 0.03 ms
+  Max: 0.30 ms
+  Avg: 0.08 ms
+
+Element: queue0
+  Count: 890
+  Min: 0.78 ms
+  Max: 119.03 ms
+  Avg: 88.42 ms
+
+Element: tcamconvert0
+  Count: 890
+  Min: 7.12 ms
+  Max: 16.63 ms
+  Avg: 7.72 ms
+
+Element: videoconvert0
+  Count: 889
+  Min: 31.80 ms
+  Max: 60.18 ms
+  Avg: 33.12 ms
+
+Element: capsfilter1
+  Count: 889
+  Min: 0.70 ms
+  Max: 4.72 ms
+  Avg: 0.80 ms
+
+Element: vaapiencodeh264-0
+  Count: 889
+  Min: 4.83 ms
+  Max: 53.62 ms
+  Avg: 5.32 ms
+
+Element: queue1
+  Count: 888
+  Min: 0.20 ms
+  Max: 1.00 ms
+  Avg: 0.33 ms
+
+Element: pay0
+  Count: 888
+  Min: 0.11 ms
+  Max: 3.77 ms
+  Avg: 0.14 ms
+
+
