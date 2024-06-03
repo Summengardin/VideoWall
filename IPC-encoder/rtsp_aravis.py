@@ -6,6 +6,7 @@ gi.require_version('Gst', '1.0')
 gi.require_version('GstRtspServer', '1.0')
 from gi.repository import Gst, GLib, GstRtspServer
 
+
 class VideoServerRTSP:
 
     def __init__(self, port='8554'):
@@ -27,9 +28,9 @@ class VideoServerRTSP:
             )
         else:
             pipeline = (
-            "videotestsrc ! video/x-raw,format=RGB,width=1280,height=720,framerate=30/1 ! "
-            "videoconvert ! video/x-raw,format=NV12 ! vaapih264enc ! rtph264pay name=pay0 pt=96"
-        )
+                "videotestsrc ! video/x-raw,format=RGB,width=1280,height=720,framerate=30/1 ! "
+                "videoconvert ! video/x-raw,format=NV12 ! vaapih264enc ! rtph264pay name=pay0 pt=96"
+            )
 
         server = GstRtspServer.RTSPServer.new()
         server.set_service(str(port))
@@ -37,14 +38,36 @@ class VideoServerRTSP:
 
         factory = GstRtspServer.RTSPMediaFactory.new()
         factory.set_launch(pipeline)
+        factory.set_shared(True)
         factory.set_latency(0)
+        factory.connect("media-configure", self._media_configure)
+
         mounts.add_factory('/test', factory)
 
         server.attach(None)
         loop = GLib.MainLoop()
 
+        
         print(f"Stream is running on: rtsp://10.0.0.5:{port}/test")
         return loop
+    
+    
+    def _media_configure(self, factory, media):
+        self.pipeline = media.get_element()
+        bus = self.pipeline.get_bus()
+        bus.add_signal_watch()
+        bus.connect("message", self._on_message)
+
+    def _on_message(self, bus, message):
+        t = message.type
+        if t == Gst.MessageType.ERROR:
+            err, debug = message.parse_error()
+            print(f"Error: {err}, {debug}")
+        elif t == Gst.MessageType.EOS:
+            print("End-Of-Stream reached")
+        elif t == Gst.MessageType.WARNING:
+            err, debug = message.parse_warning()
+            print(f"Warning: {err}, {debug}")
 
 
 def run_server(port):
