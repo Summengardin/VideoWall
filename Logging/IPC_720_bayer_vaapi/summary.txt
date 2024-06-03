@@ -1,4 +1,5 @@
 Pipeline:
+GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" gst-launch-1.0 aravissrc ! video/x-bayer,width=1280,height=720,framerate=30/1,format=rggb ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=1 ! tcamconvert ! videoconvert ! video/x-raw,format=NV12 ! vaapih264enc max-qp=30 bitrate=5000 cpb-length=1 quality-level=1 ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=1 ! rtph264pay name=pay0 pt=96 ! fakesink > traces.log 2>&1
 
 
 FPS:

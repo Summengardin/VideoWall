@@ -1,0 +1,9 @@
+Pipeline:
+GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" gst-launch-1.0 aravissrc ! video/x-bayer,width=1280,height=720,framerate=30/1,format=rggb !  tcamconvert ! videoconvert 
+! video/x-raw,format=NV12 ! x264enc  ! rtph264pay name=pay0 pt=96 ! fakesink > traces.log 2>&1
+
+FPS:
+
+
+Timing:
+
