@@ -1,0 +1,8 @@
+Pipeline:
+GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" python3 rtsp_aravis.py > traces.log 2>&1
+"aravissrc ! video/x-bayer,width=1280,height=720,framerate=30/1,format=rggb ! "
+                "queue leaky=2 max-size-time=0 max-size-bytes=0 max-size-buffers=1 ! tcamconvert ! "
+                "videoconvert ! video/x-raw,format=NV12 ! vaapih264enc max-qp=30 bitrate=5000 cpb-length=1 quality-level=1 ! "
+                "queue leaky=2 max-size-time=0 max-size-bytes=0 max-size-buffers=1 ! rtph264pay config-interval=1 name=pay0 pt=96"
+        
+
