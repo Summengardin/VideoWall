@@ -71,6 +71,6 @@ csv_file_path = args.csv_file_path
 
 df = pd.read_csv(csv_file_path)
 
-df = calculate_fps(df, 'pay0')
-plot_fps(df)
-# plot_element_data(df)
+# df = calculate_fps(df, 'pay0')
+# plot_fps(df)
+plot_element_data(df)

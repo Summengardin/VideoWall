@@ -1,0 +1,71 @@
+Element: capsfilter0
+  Count: 1394
+  Min: 0.06 ms
+  Max: 2.82 ms
+  Avg: 0.19 ms
+
+Element: queue0
+  Count: 1394
+  Min: 0.21 ms
+  Max: 20.64 ms
+  Avg: 0.50 ms
+
+Element: vaapipostproc0
+  Count: 1394
+  Min: 1.72 ms
+  Max: 30.39 ms
+  Avg: 3.79 ms
+
+Element: capsfilter1
+  Count: 1394
+  Min: 0.19 ms
+  Max: 4.77 ms
+  Avg: 0.52 ms
+
+Element: vaapiencodeh264-0
+  Count: 1393
+  Min: 3.38 ms
+  Max: 25.60 ms
+  Avg: 5.39 ms
+
+Element: queue1
+  Count: 1392
+  Min: 0.22 ms
+  Max: 13.33 ms
+  Avg: 1.00 ms
+
+Element: pay0
+  Count: 1392
+  Min: 0.17 ms
+  Max: 7.61 ms
+  Avg: 0.66 ms
+
+Element: rtpsession0
+  Count: 1486
+  Min: 0.06 ms
+  Max: 13.43 ms
+  Avg: 0.33 ms
+
+Element: tee0
+  Count: 1485
+  Min: 0.07 ms
+  Max: 7.08 ms
+  Avg: 0.21 ms
+
+Element: funnel0
+  Count: 9
+  Min: 0.10 ms
+  Max: 0.24 ms
+  Avg: 0.17 ms
+
+Element: tee1
+  Count: 10
+  Min: 0.04 ms
+  Max: 0.20 ms
+  Avg: 0.13 ms
+
+Frames Per Second (FPS)
+  Count: 1487
+  Min: 16.26 fps
+  Max: 2276.40 fps
+  Avg: 70.87 fps
