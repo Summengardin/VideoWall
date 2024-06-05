@@ -19,3 +19,10 @@ They are run from the command line.
 # Troubleshooting
 
 
+# NOTES
+
+- 170 ms G2G stopwatch-method, on Home Network. 1280x720@30FPS
+- Cant reach persistent IP of TheImagingSource (10.1.3.75/24)
+- Using YUY2 (YUV422), not Bayer, drastically reduces processing time on the IPC (See summary)
+- Looked little at tiling and OSD
+
