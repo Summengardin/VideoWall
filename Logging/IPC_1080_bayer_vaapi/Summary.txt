@@ -1,0 +1,77 @@
+Pipeline:
+
+
+
+Timing:
+
+Element: capsfilter0
+  Count: 2300
+  Min: 0.04 ms
+  Max: 6.30 ms
+  Avg: 0.14 ms
+
+Element: queue0
+  Count: 891
+  Min: 0.41 ms
+  Max: 43.04 ms
+  Avg: 17.89 ms
+
+Element: tcamconvert0
+  Count: 891
+  Min: 4.51 ms
+  Max: 45.99 ms
+  Avg: 14.76 ms
+
+Element: videoconvert0
+  Count: 890
+  Min: 23.52 ms
+  Max: 101.57 ms
+  Avg: 68.63 ms
+
+Element: capsfilter1
+  Count: 890
+  Min: 0.25 ms
+  Max: 2.40 ms
+  Avg: 0.79 ms
+
+Element: vaapiencodeh264-0
+  Count: 890
+  Min: 6.21 ms
+  Max: 41.48 ms
+  Avg: 9.05 ms
+
+Element: queue1
+  Count: 889
+  Min: 0.27 ms
+  Max: 13.36 ms
+  Avg: 0.77 ms
+
+Element: pay0
+  Count: 889
+  Min: 0.14 ms
+  Max: 2.00 ms
+  Avg: 0.26 ms
+
+Element: rtpsession0
+  Count: 1009
+  Min: 0.06 ms
+  Max: 3.81 ms
+  Avg: 0.17 ms
+
+Element: tee0
+  Count: 1008
+  Min: 0.07 ms
+  Max: 0.32 ms
+  Avg: 0.11 ms
+
+Element: tee1
+  Count: 15
+  Min: 0.05 ms
+  Max: 0.17 ms
+  Avg: 0.12 ms
+
+Element: funnel0
+  Count: 15
+  Min: 0.06 ms
+  Max: 0.34 ms
+  Avg: 0.15 ms
