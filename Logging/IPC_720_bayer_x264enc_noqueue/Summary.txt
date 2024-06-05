@@ -1,11 +1,3 @@
-Pipeline
-
-FPS:
-Average Frame Time: 0.038011 seconds
-Estimated FPS: 26.31
-
-
-Timing:
 Element: capsfilter0
   Count: 266
   Min: 0.04 ms
@@ -41,3 +33,9 @@ Element: pay0
   Min: 0.12 ms
   Max: 4.56 ms
   Avg: 0.40 ms
+
+Frames Per Second (FPS)
+  Count: 266
+  Min: 1.18 fps
+  Max: 59.20 fps
+  Avg: 11.56 fps
