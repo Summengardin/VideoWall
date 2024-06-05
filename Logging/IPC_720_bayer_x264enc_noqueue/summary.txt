@@ -1,9 +1,43 @@
-Pipeline:
-GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" gst-launch-1.0 aravissrc ! video/x-bayer,width=1280,height=720,framerate=30/1,format=rggb !  tcamconvert ! videoconvert 
-! video/x-raw,format=NV12 ! x264enc  ! rtph264pay name=pay0 pt=96 ! fakesink > traces.log 2>&1
+Pipeline
 
 FPS:
+Average Frame Time: 0.038011 seconds
+Estimated FPS: 26.31
 
 
 Timing:
+Element: capsfilter0
+  Count: 266
+  Min: 0.04 ms
+  Max: 3.96 ms
+  Avg: 0.22 ms
 
+Element: tcamconvert0
+  Count: 266
+  Min: 1.88 ms
+  Max: 25.76 ms
+  Avg: 6.24 ms
+
+Element: videoconvert0
+  Count: 266
+  Min: 9.12 ms
+  Max: 91.15 ms
+  Avg: 28.05 ms
+
+Element: capsfilter1
+  Count: 266
+  Min: 0.20 ms
+  Max: 8.85 ms
+  Avg: 0.68 ms
+
+Element: x264enc0
+  Count: 56
+  Min: 4558.74 ms
+  Max: 10689.58 ms
+  Avg: 8718.62 ms
+
+Element: pay0
+  Count: 219
+  Min: 0.12 ms
+  Max: 4.56 ms
+  Avg: 0.40 ms

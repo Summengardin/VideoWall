@@ -5,4 +5,80 @@ GST_DEBUG="GST_TRACER:7" GST_TRACERS="latency(flags=element)" python3 rtsp_aravi
                 "videoconvert ! video/x-raw,format=NV12 ! vaapih264enc max-qp=30 bitrate=5000 cpb-length=1 quality-level=1 ! "
                 "queue leaky=2 max-size-time=0 max-size-bytes=0 max-size-buffers=1 ! rtph264pay config-interval=1 name=pay0 pt=96"
         
+FPS
 
+
+
+Timing:
+
+Element: capsfilter0
+  Count: 1998
+  Min: 0.08 ms
+  Max: 3.34 ms
+  Avg: 0.13 ms
+
+Element: queue0
+  Count: 1998
+  Min: 0.21 ms
+  Max: 4.43 ms
+  Avg: 0.37 ms
+
+Element: tcamconvert0
+  Count: 1998
+  Min: 0.53 ms
+  Max: 5.66 ms
+  Avg: 1.07 ms
+
+Element: videoconvert0
+  Count: 1998
+  Min: 1.89 ms
+  Max: 12.15 ms
+  Avg: 3.69 ms
+
+Element: capsfilter1
+  Count: 1998
+  Min: 0.16 ms
+  Max: 4.66 ms
+  Avg: 0.36 ms
+
+Element: vaapiencodeh264-0
+  Count: 1998
+  Min: 1.20 ms
+  Max: 31.34 ms
+  Avg: 2.15 ms
+
+Element: queue1
+  Count: 1998
+  Min: 0.20 ms
+  Max: 4.38 ms
+  Avg: 0.99 ms
+
+Element: pay0
+  Count: 1998
+  Min: 0.13 ms
+  Max: 4.55 ms
+  Avg: 0.43 ms
+
+Element: rtpsession0
+  Count: 2266
+  Min: 0.06 ms
+  Max: 1.79 ms
+  Avg: 0.25 ms
+
+Element: tee0
+  Count: 2265
+  Min: 0.07 ms
+  Max: 4.52 ms
+  Avg: 0.18 ms
+
+Element: funnel0
+  Count: 14
+  Min: 0.11 ms
+  Max: 0.45 ms
+  Avg: 0.28 ms
+
+Element: tee1
+  Count: 15
+  Min: 0.05 ms
+  Max: 0.12 ms
+  Avg: 0.09 ms
