@@ -1,83 +1,89 @@
 Element: rtpsession0
-  Count: 23761
+  Count: 30895
   Min: 0.02 ms
-  Max: 0.72 ms
+  Max: 0.95 ms
   Avg: 0.06 ms
 
 Element: rtpstorage0
-  Count: 23715
+  Count: 30837
   Min: 0.02 ms
-  Max: 7.61 ms
-  Avg: 0.09 ms
+  Max: 9.44 ms
+  Avg: 0.08 ms
 
 Element: rtpjitterbuffer0
-  Count: 23714
+  Count: 30837
   Min: 0.02 ms
-  Max: 172.36 ms
-  Avg: 2.19 ms
+  Max: 148.80 ms
+  Avg: 2.25 ms
 
 Element: rtpssrcdemux0
-  Count: 23761
+  Count: 30895
   Min: 0.02 ms
-  Max: 9.47 ms
+  Max: 9.53 ms
   Avg: 0.07 ms
 
 Element: typefind
-  Count: 23713
+  Count: 30837
   Min: 0.03 ms
-  Max: 6.34 ms
+  Max: 8.43 ms
   Avg: 0.10 ms
 
 Element: rtpptdemux0
-  Count: 23713
+  Count: 30836
   Min: 0.03 ms
-  Max: 0.87 ms
+  Max: 1.77 ms
   Avg: 0.11 ms
 
 Element: rtph265depay0
-  Count: 2768
+  Count: 3570
   Min: 0.03 ms
-  Max: 0.60 ms
-  Avg: 0.10 ms
+  Max: 1.43 ms
+  Avg: 0.11 ms
 
 Element: h265parse0
-  Count: 2768
-  Min: 0.13 ms
-  Max: 60.92 ms
-  Avg: 0.97 ms
+  Count: 3570
+  Min: 0.14 ms
+  Max: 49.48 ms
+  Avg: 0.90 ms
 
 Element: capsfilter0
-  Count: 2768
-  Min: 0.02 ms
-  Max: 4.42 ms
+  Count: 3570
+  Min: 0.03 ms
+  Max: 1.42 ms
   Avg: 0.08 ms
 
 Element: nvv4l2decoder0
-  Count: 2768
-  Min: 1.64 ms
-  Max: 120.72 ms
-  Avg: 11.67 ms
+  Count: 3570
+  Min: 1.72 ms
+  Max: 118.13 ms
+  Avg: 11.56 ms
 
 Element: queue
-  Count: 2389
-  Min: 0.11 ms
-  Max: 12.96 ms
-  Avg: 2.54 ms
+  Count: 6062
+  Min: 0.05 ms
+  Max: 34.58 ms
+  Avg: 2.69 ms
 
 Element: Stream-muxer
-  Count: 2387
-  Min: 0.09 ms
-  Max: 15506.95 ms
-  Avg: 19.24 ms
+  Count: 3540
+  Min: 0.06 ms
+  Max: 7208.00 ms
+  Avg: 2.41 ms
 
-Element: convertor
-  Count: 2387
-  Min: 2.40 ms
-  Max: 81.97 ms
-  Avg: 8.12 ms
+Element: nvtiler
+  Count: 2520
+  Min: 9.57 ms
+  Max: 147.10 ms
+  Avg: 13.49 ms
+
+Element: onscreendisplay
+  Count: 2520
+  Min: 1.88 ms
+  Max: 50.63 ms
+  Avg: 4.51 ms
 
 Frames Per Second (FPS)
-  Count: 31390
-  Min: -58193.67 fps
-  Max: 84688.35 fps
-  Avg: 3332.87 fps
+  Count: 42395
+  Min: -400641.03 fps
+  Max: 558035.71 fps
+  Avg: 3402.94 fps

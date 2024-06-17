@@ -1,0 +1,89 @@
+Element: rtpsession0
+  Count: 30895
+  Min: 0.02 ms
+  Max: 0.95 ms
+  Avg: 0.06 ms
+
+Element: rtpstorage0
+  Count: 30837
+  Min: 0.02 ms
+  Max: 9.44 ms
+  Avg: 0.08 ms
+
+Element: rtpjitterbuffer0
+  Count: 30837
+  Min: 0.02 ms
+  Max: 148.80 ms
+  Avg: 2.25 ms
+
+Element: rtpssrcdemux0
+  Count: 30895
+  Min: 0.02 ms
+  Max: 9.53 ms
+  Avg: 0.07 ms
+
+Element: typefind
+  Count: 30837
+  Min: 0.03 ms
+  Max: 8.43 ms
+  Avg: 0.10 ms
+
+Element: rtpptdemux0
+  Count: 30836
+  Min: 0.03 ms
+  Max: 1.77 ms
+  Avg: 0.11 ms
+
+Element: rtph265depay0
+  Count: 3570
+  Min: 0.03 ms
+  Max: 1.43 ms
+  Avg: 0.11 ms
+
+Element: h265parse0
+  Count: 3570
+  Min: 0.14 ms
+  Max: 49.48 ms
+  Avg: 0.90 ms
+
+Element: capsfilter0
+  Count: 3570
+  Min: 0.03 ms
+  Max: 1.42 ms
+  Avg: 0.08 ms
+
+Element: nvv4l2decoder0
+  Count: 3570
+  Min: 1.72 ms
+  Max: 118.13 ms
+  Avg: 11.56 ms
+
+Element: queue
+  Count: 6062
+  Min: 0.05 ms
+  Max: 34.58 ms
+  Avg: 2.69 ms
+
+Element: Stream-muxer
+  Count: 3540
+  Min: 0.06 ms
+  Max: 7208.00 ms
+  Avg: 2.41 ms
+
+Element: nvtiler
+  Count: 2520
+  Min: 9.57 ms
+  Max: 147.10 ms
+  Avg: 13.49 ms
+
+Element: onscreendisplay
+  Count: 2520
+  Min: 1.88 ms
+  Max: 50.63 ms
+  Avg: 4.51 ms
+
+Frames Per Second (FPS)
+  Count: 42395
+  Min: -400641.03 fps
+  Max: 558035.71 fps
+  Avg: 3402.94 fps
