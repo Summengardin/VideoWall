@@ -1,89 +1,83 @@
 Element: rtpsession0
-  Count: 22258
+  Count: 23761
   Min: 0.02 ms
-  Max: 3.19 ms
+  Max: 0.72 ms
   Avg: 0.06 ms
 
 Element: rtpstorage0
-  Count: 22216
+  Count: 23715
   Min: 0.02 ms
-  Max: 7.92 ms
-  Avg: 0.08 ms
-
-Element: rtpssrcdemux0
-  Count: 22257
-  Min: 0.02 ms
-  Max: 2.12 ms
-  Avg: 0.07 ms
+  Max: 7.61 ms
+  Avg: 0.09 ms
 
 Element: rtpjitterbuffer0
-  Count: 22214
+  Count: 23714
   Min: 0.02 ms
-  Max: 167.45 ms
-  Avg: 2.91 ms
+  Max: 172.36 ms
+  Avg: 2.19 ms
+
+Element: rtpssrcdemux0
+  Count: 23761
+  Min: 0.02 ms
+  Max: 9.47 ms
+  Avg: 0.07 ms
 
 Element: typefind
-  Count: 22214
+  Count: 23713
   Min: 0.03 ms
-  Max: 8.64 ms
-  Avg: 0.12 ms
+  Max: 6.34 ms
+  Avg: 0.10 ms
 
 Element: rtpptdemux0
-  Count: 22213
-  Min: 0.03 ms
-  Max: 0.80 ms
-  Avg: 0.12 ms
-
-Element: rtph265depay0
-  Count: 2545
-  Min: 0.03 ms
-  Max: 0.41 ms
-  Avg: 0.11 ms
-
-Element: h265parse0
-  Count: 2545
-  Min: 0.13 ms
-  Max: 49.76 ms
-  Avg: 1.00 ms
-
-Element: capsfilter0
-  Count: 2545
+  Count: 23713
   Min: 0.03 ms
   Max: 0.87 ms
+  Avg: 0.11 ms
+
+Element: rtph265depay0
+  Count: 2768
+  Min: 0.03 ms
+  Max: 0.60 ms
+  Avg: 0.10 ms
+
+Element: h265parse0
+  Count: 2768
+  Min: 0.13 ms
+  Max: 60.92 ms
+  Avg: 0.97 ms
+
+Element: capsfilter0
+  Count: 2768
+  Min: 0.02 ms
+  Max: 4.42 ms
   Avg: 0.08 ms
 
 Element: nvv4l2decoder0
-  Count: 2545
-  Min: 5.04 ms
-  Max: 118.58 ms
-  Avg: 11.81 ms
+  Count: 2768
+  Min: 1.64 ms
+  Max: 120.72 ms
+  Avg: 11.67 ms
 
 Element: queue
-  Count: 4386
-  Min: 0.04 ms
-  Max: 33.72 ms
-  Avg: 2.40 ms
+  Count: 2389
+  Min: 0.11 ms
+  Max: 12.96 ms
+  Avg: 2.54 ms
 
 Element: Stream-muxer
-  Count: 2529
-  Min: 0.06 ms
-  Max: 181.80 ms
-  Avg: 0.73 ms
+  Count: 2387
+  Min: 0.09 ms
+  Max: 15506.95 ms
+  Avg: 19.24 ms
 
-Element: nvtiler
-  Count: 1857
-  Min: 8.14 ms
-  Max: 31.82 ms
-  Avg: 12.45 ms
-
-Element: onscreendisplay
-  Count: 1856
-  Min: 0.96 ms
-  Max: 4.75 ms
-  Avg: 2.40 ms
+Element: convertor
+  Count: 2387
+  Min: 2.40 ms
+  Max: 81.97 ms
+  Avg: 8.12 ms
 
 Frames Per Second (FPS)
-  Count: 31698
-  Min: -343406.59 fps
-  Max: 15625000.00 fps
-  Avg: 3846.09 fps
+  Count: 31390
+  Min: -58193.67 fps
+  Max: 84688.35 fps
+  Avg: 3332.87 fps
