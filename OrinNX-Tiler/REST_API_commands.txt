@@ -1,4 +1,6 @@
-ADD
+==================================
+    ADD example
+==================================
 
 curl --location 'http://192.168.181.215:9000/api/v1/stream/remove' \
 --header 'Content-Type: application/json' \
@@ -10,21 +12,34 @@ curl --location 'http://192.168.181.215:9000/api/v1/stream/remove' \
  }
 }
 '
+----------------------------------
 
 
+==================================
 REMOVE example
+==================================
 
-curl --location 'http://192.168.181.215:9000/api/v1/stream/remove' \
---header 'Content-Type: application/json' \
---data '{
+curl -XPOST 'http://192.168.181.215:9000/api/v1/stream/remove' -d '{
   "value": {
      "camera_id": "uniqueSensorIDdf",
      "camera_url": "file:///home/seaonics/Dev/Samples/image.mp4",
      "change": "camera_remove",
  }
-}
-'
+}'
+----------------------------------
+
+
+==================================
+    GET STREAM INFO
+==================================
+
+curl -XPOST 'http://192.168.181.215:9000/api/v1/stream/get-stream-info
+
+----------------------------------
 
 
 For more examples see DeepstreamSDK documenation 
 https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmultiurisrcbin.html
+
+Or see code in /opt/nvidia/deepstream/deepstream/sources/libs/nvds_rest_server/nvds_rest_server.cpp 
+on a device with deepstream installed

@@ -1,5 +1,10 @@
 ## Deepstream 
 
+### Environment variables
+'export USE_NEW_NVSTREAMMUX=yes'
+'export DISPLAY=:0.0'
+
+
 ### Docker
 
 Run using 
